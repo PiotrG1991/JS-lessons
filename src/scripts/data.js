@@ -171,11 +171,65 @@ const data = [
 //    return false;
 //}
 
-const isOldPeople = (items) =>{
-    const people = items.filter((item) => item.age > 35);
-    return people
-        .map((person) => person.age);
-}
+//const isOldPeople = (items) =>{
+//    const people = items.filter((item) => item.age > 35);
+ //   return people
+//        .map((person) => person.age);
+//}
 
-const result = isOldPeople(data);
-console.log(result);
+//const result = isOldPeople(data);
+//console.log(result);
+
+
+// czy wszyscy to młodzi ludzie, 40 < lat
+
+//const isYangPeople = (items) => {
+//    for (const item of items){
+//        if (item.age >= 40){
+//            return true
+ //       }
+//    }
+//    return false
+//}
+//
+//console.log(isYangPeople(data));
+
+//const isYangPeople = (items) => items.every((item) => item.age <= 40);
+//const isYangPeople = (items) => !items.some((item) => item.age > 40);
+//console.log(isYangPeople(data));
+
+// policz ile jest niepowtarzalnych hobbies
+
+//const countUniqueHobbies = function (people) {
+//    const hobbies = [];
+//
+//    for (const person of people){
+//        for (const hobby of person.hobbies ?? []){
+//            if (!hobbies.includes(hobby)){
+//                hobbies.push(hobby);
+//            }
+//        }
+//    }
+//    return hobbies.length;
+//};
+
+//const countUniqueHobbies =(people) =>
+    //new Set(people.flatMap((person) => person.hobbies ?? [])).size;
+
+//console.log(countUniqueHobbies(data));
+
+// zwróć tablicę imion osób z warszawy
+
+//const getNames = function (items){
+//    const names = [];
+//    for (let i = 0; i<items.length; i++){
+//        if (items[i].city.toLowerCase() === "warszawa"){
+//            names.push(items[i].name);
+//        }
+//    }
+//    return names
+//}
+
+//
+
+console.log(getNames(data));
